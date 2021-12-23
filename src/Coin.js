@@ -80,7 +80,7 @@ function Coin({ coins }) {
                     </div>
                     <div className="coin-change">
                       <h4>Price Change 24H</h4>
-                      <h3>${price_change_24h}</h3>
+                      <h3>${price_change_24h.toFixed(2)}</h3>
                     </div>
                     <div className="coin-high">
                       <FaLongArrowAltUp />

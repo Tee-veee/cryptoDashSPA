@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "./Logo.svg";
-import { FaStar } from "react-icons/fa";
 
 function Header({ handleChange }) {
   return (

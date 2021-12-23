@@ -10,6 +10,7 @@ function App() {
   const [coinsList, setCoinsList] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
+  // API CALL
   useEffect(() => {
     axios
       .get(
@@ -23,12 +24,14 @@ function App() {
   }, []);
 
   useEffect(() => {
+    // IF NO VALUE IN SEARCH INPUT SET LIST TO ALL COINS
     if (searchTerm.length === 0) {
       setCoinsList(allCoins);
       return;
     }
     const searchArr = [];
 
+    // if coin name matches value inpute push it into search array and set search array as coin list
     allCoins.forEach((coin) => {
       if (coin.name.toLowerCase().includes(searchTerm.toLowerCase())) {
         searchArr.push(coin);
@@ -36,12 +39,14 @@ function App() {
     });
 
     setCoinsList(searchArr);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm]);
 
   const handleChange = (e) => {
     setSearchTerm(e.target.value);
   };
 
+  // filters coins list based on different values
   const filterItems = (type) => {
     switch (type) {
       case "symbol":
