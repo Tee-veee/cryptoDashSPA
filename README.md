@@ -4,10 +4,10 @@ This application gives you the ability to search through a list of cryptocurrenc
 
 Built utilising React.JS, HTML, CSS.
 
-Coded by Ty.Vile
-
-## DEPLOY LINK
+## deployed @
 https://jolly-newton-367a3c.netlify.app
 
-## FUTURE FEATURES
-- Adding d3.js charts to the coin detail accordion section to give the SPA a more interactive and informative feel as the data is currently boring.
+## images
+![SLIDE1!](https://user-images.githubusercontent.com/81460374/149463185-d0aeaf98-e4f5-4b84-a26c-a57266152bc3.png)
+!SLIDE2!](https://user-images.githubusercontent.com/81460374/149463195-6f85d88a-e952-44f1-9006-f595795f6d79.png)
+![SLIDE3!](https://user-images.githubusercontent.com/81460374/149463208-14f0fa9b-2cb1-4704-bd9a-02204646c47c.png)
